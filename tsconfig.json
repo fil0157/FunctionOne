@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "stripInternal": false,
+    "noEmit": true,
+    "lib": [
+        "esnext",
+        "es2016",
+        "dom",
+        "es5"
+    ],
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "FunctionOne": ["./src/index"],
+      "FunctionOne/color": ["./src/color"],
+      "FunctionOne/name": ["./src/name"],
+    }
+  },
+  "bazelOptions": {
+    "suppressTsconfigOverrideWarnings": true
+  }
+}

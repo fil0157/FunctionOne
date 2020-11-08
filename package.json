@@ -1,0 +1,44 @@
+{
+  "name": "FunctionOne",
+  "version": "1.0.0",
+  "description": "modern function library",
+  "author": "fil0157 <fil0157@ya.ru>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fil0157/FunctionOne.git"
+  },
+  "homepage": "https://github.com/fil0157/FunctionOne#readme",
+  "scripts": {
+    "start": "tsc -b ./src/tsconfig.esm.json --watch",
+    "build": "tsc -b ./src/tsconfig.esm.json",
+    "build:prod": "npm run build && node tools/pack-lib.js",
+    "publish": "npm run build:prod && cd dist && npm pack && npm publish"
+  },
+  "dependencies": {
+    "tslib": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.5",
+    "@types/shelljs": "^0.8.8",
+    "shelljs": "^0.8.4",
+    "typescript": "~4.0.2"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bugs": {
+    "url": "https://github.com/fil0157/FunctionOne/issues"
+  },
+  "keywords": [
+    "Function",
+    "FunctionJS",
+    "ES6",
+    "ES2015",
+    "typescript",
+    "javascript",
+    "js",
+    "ts"
+  ],
+  "main": "./dist/index.js",
+  "sideEffects": false
+}
