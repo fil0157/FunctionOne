@@ -9,9 +9,12 @@
     "url": "git+https://github.com/fil0157/FunctionOne.git"
   },
   "homepage": "https://github.com/fil0157/FunctionOne#readme",
+  "bugs": {
+    "url": "https://github.com/fil0157/FunctionOne/issues"
+  },
   "scripts": {
-    "start": "tsc -b ./src/tsconfig.esm.json --watch",
-    "build": "tsc -b ./src/tsconfig.esm.json",
+    "start": "tsc --watch",
+    "build": "tsc",
     "build:prod": "npm run build && node tools/pack-lib.js",
     "publish": "npm run build:prod && cd dist && npm pack && npm publish"
   },
@@ -26,9 +29,6 @@
   },
   "peerDependencies": {},
   "optionalDependencies": {},
-  "bugs": {
-    "url": "https://github.com/fil0157/FunctionOne/issues"
-  },
   "keywords": [
     "Function",
     "FunctionOne",
@@ -39,6 +39,7 @@
     "js",
     "ts"
   ],
-  "main": "./dist/index.js",
+  "main": "index.js",
+  "typings": "index.d.ts",
   "sideEffects": false
 }
