@@ -9,10 +9,10 @@ const LIB_DIR = `dist`;
 
 
 const FILES = [
-    `package.json`,
-    `CHANGELOG.md`,
-    `LICENSE.md`,
-    `README.md`
+  `package.json`,
+  `CHANGELOG.md`,
+  `LICENSE.md`,
+  `README.md`
 ]
 
 
