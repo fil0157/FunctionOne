@@ -16,6 +16,6 @@ const FILES = [
 ]
 
 
-shell.rm('dist/tsconfig.esm.tsbuildinfo')
+// shell.rm('dist/tsconfig.esm.tsbuildinfo')
 
 shell.cp(`-Rf`, FILES, `${LIB_DIR}`);
