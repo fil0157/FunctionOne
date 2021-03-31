@@ -1,8 +1,8 @@
 // Project
-import { RGBA } from "../../../interfaces";
+import { RGB, RGBA } from "../../../interfaces";
 
 
 
-export function rgbaToGgb({ r, g, b, a }: RGBA) {
+export function rgbaToGgb({ r, g, b, a }: RGBA): RGB {
   return ({ r, g, b });
 }
