@@ -16,15 +16,20 @@
     "start": "tsc --watch",
     "build": "tsc",
     "build:prod": "npm run build && node tools/pack-lib.js",
+    "test": "ts-node ./node_modules/jasmine/bin/jasmine --config=jasmine.json",
     "publish": "npm run build:prod && cd dist && npm pack && npm publish"
   },
   "dependencies": {
     "tslib": "^2.0.3"
   },
   "devDependencies": {
+    "@types/jasmine": "^3.6.9",
     "@types/node": "^12.12.5",
     "@types/shelljs": "^0.8.8",
+    "jasmine": "^3.7.0",
+    "jasmine-spec-reporter": "^6.0.0",
     "shelljs": "^0.8.4",
+    "ts-node": "^9.1.1",
     "typescript": "~4.0.2"
   },
   "peerDependencies": {},
