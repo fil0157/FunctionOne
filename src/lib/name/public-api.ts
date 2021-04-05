@@ -1,2 +1,2 @@
-// export name functions
+// Functions
 export * from './functions';

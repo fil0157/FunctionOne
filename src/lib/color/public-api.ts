@@ -1,3 +1,5 @@
-// export color functions
+// Functions
 export * from './functions';
+
+// Interfaces
 export * from './interfaces';
