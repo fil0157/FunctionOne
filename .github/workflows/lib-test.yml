@@ -1,0 +1,46 @@
+name: Lib Test
+
+on:
+
+  push:
+    branches:
+      - master
+      - dev
+
+  pull_request:
+    branches:
+      - master
+      - dev
+
+jobs:
+
+  libtest:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+        os: [windows-latest, ubuntu-latest]
+
+    env:
+      CI_JOB_NUMBER: 1
+
+    steps:
+
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      # - name: Build library
+      #   run: npm run lib:build
+
+      - name: Test library
+        run: npm run test
