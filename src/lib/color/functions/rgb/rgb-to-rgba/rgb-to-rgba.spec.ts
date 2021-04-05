@@ -15,8 +15,8 @@ describe(`rgbToGgba()`, () => {
     expect(foo).toEqual({ r: 1, g: 1, b: 1, a: 1 });
   });
 
-  it(`rgbToGgba({ r: 256, g: 256, b: 256 }) return { r: 256, g: 256, b: 256, a: 1 }`, () => {
-    const foo: RGBA = rgbToGgba({ r: 256, g: 256, b: 256 });
-    expect(foo).toEqual({ r: 256, g: 256, b: 256, a: 1 });
+  it(`rgbToGgba({ r: 255, g: 255, b: 255 }) return { r: 255, g: 255, b: 255, a: 1 }`, () => {
+    const foo: RGBA = rgbToGgba({ r: 255, g: 255, b: 255 });
+    expect(foo).toEqual({ r: 255, g: 255, b: 255, a: 1 });
   });
 });
