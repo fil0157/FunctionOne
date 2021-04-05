@@ -15,8 +15,8 @@ describe(`rgbaToGgb()`, () => {
     expect(car).toEqual({ r: 1, g: 1, b: 1 });
   });
 
-  it(`rgbaToGgb({ r: 256, g: 256, b: 256, a: 1 }) return { r: 256, g: 256, b: 256 }`, () => {
-    const car: RGB = rgbaToGgb({ r: 256, g: 256, b: 256, a: 0 });
-    expect(car).toEqual({ r: 256, g: 256, b: 256 });
+  it(`rgbaToGgb({ r: 255, g: 255, b: 255, a: 1 }) return { r: 255, g: 255, b: 255 }`, () => {
+    const car: RGB = rgbaToGgb({ r: 255, g: 255, b: 255, a: 0 });
+    expect(car).toEqual({ r: 255, g: 255, b: 255 });
   });
 });
