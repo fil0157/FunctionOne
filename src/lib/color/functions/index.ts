@@ -1,7 +1,8 @@
 // HEX
-export * from './hex-string'
+export * from './hex-string';
 
 // RGB
-export * from './rgb'
-export * from './rgba'
-export * from './rgba-string'
+export * from './rgb';
+export * from './rgba';
+export * from './rgb-string';
+export * from './rgba-string';
