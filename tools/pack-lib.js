@@ -12,7 +12,8 @@ const FILES = [
   `package.json`,
   `CHANGELOG.md`,
   `LICENSE.md`,
-  `README.md`
+  `README.md`,
+  `docs/`,
 ]
 
 
