@@ -50,7 +50,7 @@ describe(`isRgbaString()`, () => {
   });
 
   it(`isRgbaString('rgba(100, 100.5, 100, 1)') return false`, () => {
-    const bool = isRgbaString('rgba(0.5, 100, 100, 1)');
+    const bool = isRgbaString('rgba(100, 100.5, 100, 1)');
     expect(bool).toEqual(false);
   });
 
