@@ -2,6 +2,7 @@
   {
     "name": "FunctionOne",
     "path": "dist/index.js",
-    "ignore": ["tslib"]
+    "ignore": ["tslib"],
+    "limit": "1 KB"
   }
 ]
