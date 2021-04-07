@@ -16,6 +16,7 @@
     "start": "tsc --watch",
     "build": "tsc",
     "build:prod": "npm run build && node tools/pack-lib.js",
+    "size": "size-limit",
     "test": "ts-node ./node_modules/jasmine/bin/jasmine --config=jasmine.json",
     "publish": "npm run build:prod && cd dist && npm pack && npm publish"
   },
