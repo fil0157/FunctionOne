@@ -1,5 +1,5 @@
 // Project
-import { RGBA } from '../../../interfaces';
+import { RGBA } from '../../../interfaces/rgba';
 import { hexStringToRgba } from './hex-string-to-rgba';
 
 

@@ -1,6 +1,6 @@
 // Project
 import { rgbToGgba } from './rgb-to-rgba';
-import { RGBA } from '../../../interfaces';
+import { RGBA } from '../../../interfaces/rgba';
 
 
 
