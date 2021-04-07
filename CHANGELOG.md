@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.0 (April 7, 2021)
+- Redesigned architecture
+- Optimized size
+
 ## 1.1.0 (April 6, 2021)
 - Functions added
   - isHexString()
