@@ -1,0 +1,7 @@
+[
+  {
+    "name": "FunctionOne",
+    "path": "dist/index.js",
+    "ignore": ["tslib"]
+  }
+]
