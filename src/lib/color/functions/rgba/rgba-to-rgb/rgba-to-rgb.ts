@@ -1,5 +1,6 @@
 // Project
-import { RGB, RGBA } from "../../../interfaces";
+import { RGB } from "../../../interfaces/rgb";
+import { RGBA } from "../../../interfaces/rgba";
 
 
 
